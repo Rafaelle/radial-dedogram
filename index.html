@@ -34,8 +34,12 @@
 
   <div class="container" align=center style="margin-top:20px;">
     <div class="row">
-      <div id="departament_detail"> </div>
-      <div id="org_details" style="width:50%" align=right> </div>
+      <div id="departament_detail">
+
+      </div>
+      <div id="org_details" class="column" style="width:50%" align=right>
+
+      </div>
 
     </div>
   </div>
@@ -61,7 +65,7 @@
     d3.json("colaboradores.json", function(d) {
       collaborators = d.tree;
       console.log(collaborators);
-    })
+    });
     // read json data
     d3.json("data.json", function(d) {
       var data = d.tree;
@@ -104,6 +108,7 @@
           return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")";
         });
 
+
       nodeGroups.append("circle")
         .attr("r", 4)
         .attr("opacity", 1)
@@ -111,6 +116,8 @@
         .on("click", function(d) {
           collaborators_department(d.data);
         });
+      //.on("click", collaborators(d));
+
 
       nodeGroups.append("text")
         .attr("dy", ".31em")
@@ -129,16 +136,13 @@
       nodeGroups.selectAll("circle")
         .on("mouseover", function(d, i) {
           d3.select(this).attr("r", 7)
+
         })
 
       nodeGroups.selectAll("circle")
         .on("mouseout", function(d, i) {
           d3.select(this).attr("r", 4);
         })
-
-
-
-
     });
 
     function update_person(dpt, person) {
@@ -177,8 +181,6 @@
         }
 
       });
-
-
 
     }
   </script>
