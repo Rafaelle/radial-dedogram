@@ -173,6 +173,7 @@
       dpt.selectAll("person_detail").remove();
 
       collaborators.collaborators.filter(function(d) {
+        console.log("aqui");
         if (d.type === department.type) {
           update_person(dpt, d);
         }
