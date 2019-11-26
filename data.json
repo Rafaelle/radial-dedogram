@@ -2,186 +2,186 @@
   "tree": {
     "department": "DIRETORIA",
     "abbreviation": "",
-    "type": "type2",
-    "collaborators": [],
+    "id": 1,
+
     "children": [{
       "department": "ADMINISTRAÇÃO",
       "abbreviation": "",
-      "type": "type3",
-      "collaborators": [],
+      "id": 2,
+
       "children": [{
         "department": "Coordenador de Administração",
         "sigla": "COADM",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.1,
+
         "children": []
       }, {
         "department": "Serviço Administrativo",
         "abbreviation": "SEADM",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.2,
+
         "children": []
       }, {
         "department": "Assessoria de Comunicação",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.3,
+
         "children": []
       }, {
         "department": "Serviço de Informação ao Cidadão",
         "abbreviation": "SIC",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.4,
+
         "children": []
       }, {
         "department": "Ouvidoria",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.5,
+
         "children": []
       }, {
         "department": "Tecnologia da Informação",
         "abbreviation": "TI",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.6,
+
         "children": []
       }, {
         "department": "Compras e Contratações",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.7,
+
         "children": []
       }, {
         "department": "Contabilidade e Finanças",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.8,
+
         "children": []
       }, {
         "department": "Patrimônio e Almoxarifado",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.9,
+
         "children": []
       }, {
         "department": "Lei de Acesso à Informação",
         "abbreviation": "LAI",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.10,
+
         "children": []
       }, {
         "department": "Sistema E_AUD",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.11,
+
         "children": []
       }, {
         "department": "Sistema INCOM",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.12,
+
         "children": []
       }, {
         "department": "Gestão de Pesoas",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.13,
+
         "children": []
       }, {
         "department": "Infraestrutura e Transporte",
         "abbreviation": "",
-        "type": "type3",
-        "collaborators": [],
+        "id": 2.14,
+
         "children": []
       }]
     }, {
       "department": "PESQUISA",
       "abbreviation": "",
-      "type": "type4",
-      "collaborators": [],
+      "id": 3,
+
       "children": [{
         "department": "Coordenação de Pesquisa",
         "abbreviation": "COPEQ",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.1,
+
         "children": []
       }, {
         "department": "Núcleo de Ciências do Solo e Mineralogia",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.2,
+
         "children": []
       }, {
         "department": "Núcleo de Biodiversidade",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.3,
+
         "children": []
       }, {
         "department": "Núcleo de Gestão de Informação e do Conhecimento",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.4,
+
         "children": []
       }, {
         "department": "Núcleo de Geotecnologias",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.5,
+
         "children": []
       }, {
         "department": "Complexo Laboratoriais do Insa",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.6,
+
         "children": []
       }, {
         "department": "Núcleo de Desertificação e Agroecologia em Terras Secas",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.7,
+
         "children": []
       }, {
         "department": "Núcleo de Produção Animal",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.8,
+
         "children": []
       }, {
         "department": "Núcleo de Produção Vegetal",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.9,
+
         "children": []
       }, {
         "department": "Núcleo de Recursos Hídricos",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.10,
+
         "children": []
       }, {
         "department": "Núcleo de Desenvolvimento de Tecnologias Sociais",
         "abbreviation": "NDST",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.11,
+
         "children": []
       }, {
         "department": "Assessoria Técnica para Pesquisa",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.12,
+
         "children": []
       }, {
         "department": "Popularização da Ciência",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.13,
+
         "children": []
       }, {
         "department": "Estação Experimental",
         "abbreviation": "",
-        "type": "type4",
-        "collaborators": [],
+        "id": 3.15,
+
         "children": []
       }]
     }]
