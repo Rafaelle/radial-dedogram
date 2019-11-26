@@ -113,10 +113,8 @@
         .attr("opacity", 1)
         .style("fill", "#69b3a2")
         .on("click", function(d) {
-          console.log('click');
           collaborators_department(d.data);
         });
-      //.on("click", collaborators(d));
 
 
       nodeGroups.append("text")
@@ -173,7 +171,8 @@
     function collaborators_department(department) {
       console.log(department);
       var dpt = d3.select("#departament_detail");
-      dpt.selectAll("person_detail").remove()
+      dpt.selectAll("person_detail").remove();
+      console.log("click");
 
       collaborators.collaborators.filter(function(d) {
         if (d.type === department.type) {
