@@ -61,9 +61,9 @@
       .append("g")
       .attr("transform", "translate(" + radius + "," + radius + ")");
 
-    var collaborators = [];
+    var col = [];
     d3.json("colaboradores.json", function(d) {
-      collaborators = d.tree;
+      col = d.tree;
     });
     // read json data
     d3.json("data.json", function(d) {
@@ -172,7 +172,7 @@
       var dpt = d3.select("#departament_detail");
       dpt.selectAll("person_detail").remove();
 
-      collaborators.collaborators.filter(function(d) {
+      col.collaborators.filter(function(d) {
         if (d.type === department.type) {
           console.log(d);
 
