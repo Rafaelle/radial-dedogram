@@ -170,8 +170,9 @@
     }
 
     function collaborators_department(department) {
+      console.log("click");
       var dpt = d3.select("#departament_detail");
-      dpt.selectAll("person_detail").remove()
+      dpt.selectAll("person_detail").remove();
 
       collaborators.collaborators.filter(function(d) {
         if (d.type === department.type) {
