@@ -7,6 +7,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Load d3.js -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
   <script src="https://d3js.org/d3.v4.js"></script>
   <style>
     #my_dataviz {
@@ -14,12 +16,12 @@
       padding: 20px;
     }
 
-    #departament_detail {
+  /*  #departament_detail {
       position: fixed;
       opacity: 0.9;
       padding: 10px;
     }
-
+*/
     .nodeGroups circle {
       fill: #fff;
       stroke: steelblue;
@@ -34,10 +36,10 @@
 
   <div class="container" align=center style="margin-top:20px;">
     <div class="row">
-      <div id="departament_detail" >
+      <div id="departament_detail" class="col" >
 
       </div>
-      <div id="org_details" style="width:50%" align=right>
+      <div id="org_details" class="col-8" align=right>
 
       </div>
 
@@ -148,8 +150,8 @@
         dpt.append("div")
           .attr("class", "person_detail")
           .html(
-            "<table>" +
-            "<tr><th>Cargo<td>" + person.post +
+            "<table class='table'>" +
+            "<tr><th>Cargo: </th><td>" + person.post + "</td>"+
             "<tr><th>Nome:<td>" + person.name +
             "<tr><th>Telefone<td>" + person.phone +
             "<tr><th>E-mail<td>" + person.email +
@@ -158,12 +160,12 @@
         dpt.append("div")
           .attr("class", "person_detail")
           .html(
-            "<table>" +
-            "<tr><th>Cargo<td>" + person.post +
-            "<tr><th>Nome:<td>" + person.name +
-            "<tr><th>Telefone<td>" + person.phone +
-            "<tr><th>E-mail<td>" + person.email +
-            "<tr><th>lattes<td>" + person.lattes +
+            "<table class='table table-hover'>" +
+            "<tr><th>Cargo: </th><td>" + person.post + "</td>"+
+            "<tr><th>Nome: </th><td>" + person.name + "</td>"+
+            "<tr><th>Telefone: </th><td>" + person.phone + "</td>"+
+            "<tr><th>E-mail: </th><td>" + person.email + "</td>"+
+            "<tr><th>lattes: </th><td>" + person.lattes + "</td>"+
             "</table>")
       }
     }
@@ -171,14 +173,11 @@
     function collaborators_department(department) {
       var dpt = d3.select("#departament_detail");
       dpt.selectAll("*").remove();
-      
       col.collaborators.filter(function(d) {
         if (d.dept_id === department.id) {
           update_person(dpt, d);
         }
-
       });
-
     }
   </script>
 
