@@ -172,11 +172,11 @@
       var dpt = d3.select("#departament_detail");
       dpt.selectAll("person_detail").remove();
 
-      console.log(collaborators);
-      console.log(collaborators.collaborators);
       collaborators.collaborators.filter(function(d) {
         console.log("aqui");
         if (d.type === department.type) {
+          console.log(d);
+
           update_person(dpt, d);
         }
 
