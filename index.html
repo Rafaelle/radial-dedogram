@@ -64,7 +64,6 @@
     var collaborators = [];
     d3.json("colaboradores.json", function(d) {
       collaborators = d.tree;
-      console.log(collaborators);
     });
     // read json data
     d3.json("data.json", function(d) {
@@ -114,9 +113,10 @@
         .attr("opacity", 1)
         .style("fill", "#69b3a2")
         .on("click", function(d) {
-                  console.log('click');
+          console.log('click');
           collaborators_department(d.data);
         });
+      //.on("click", collaborators(d));
 
 
       nodeGroups.append("text")
@@ -137,7 +137,7 @@
         .on("mouseover", function(d, i) {
           d3.select(this).attr("r", 7)
 
-        })
+        });
 
       nodeGroups.selectAll("circle")
         .on("mouseout", function(d, i) {
@@ -171,14 +171,13 @@
     }
 
     function collaborators_department(department) {
-      console.log("click");
+      console.log(department);
       var dpt = d3.select("#departament_detail");
-      dpt.selectAll("person_detail").remove();
+      dpt.selectAll("person_detail").remove()
 
       collaborators.collaborators.filter(function(d) {
         if (d.type === department.type) {
           update_person(dpt, d);
-            console.log(d);
         }
 
       });
