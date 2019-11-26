@@ -147,7 +147,6 @@
       if (person.lattes == null) {
         dpt.append("div")
           .attr("class", "person_detail")
-
           .html(
             "<table>" +
             "<tr><th>Cargo<td>" + person.post +
@@ -156,7 +155,8 @@
             "<tr><th>E-mail<td>" + person.email +
             "</table>")
       } else {
-        dpt.append("person_detail")
+        dpt.append("div")
+          .attr("class", "person_detail")
           .html(
             "<table>" +
             "<tr><th>Cargo<td>" + person.post +
@@ -169,10 +169,8 @@
     }
 
     function collaborators_department(department) {
-      console.log(department);
       var dpt = d3.select("#departament_detail");
       dpt.selectAll("person_detail").remove();
-      console.log("click");
 
       collaborators.collaborators.filter(function(d) {
         if (d.type === department.type) {
