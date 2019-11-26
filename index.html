@@ -170,8 +170,7 @@
 
     function collaborators_department(department) {
       var dpt = d3.select("#departament_detail");
-      dpt.selectAll("person_detail").remove();
-
+      dpt.selectAll("*").remove();
       col.collaborators.filter(function(d) {
         console.log(d.dept_id === department.id);
         if (d.dept_id === department.id) {
