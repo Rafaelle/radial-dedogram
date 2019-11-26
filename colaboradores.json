@@ -5,42 +5,42 @@
     "phone": "(83)3316-6411",
     "email": "insa@insa.gov.br",
     "lattes": "lattes",
-    "type": 1
+    "dept_id": 1
   }, {
     "post": "Secretária",
     "name": "Maria de Fátima da Silva Soares",
     "phone": "(83)3315-6411",
     "email": "maria.fatima@insa.gov.br",
     "lattes": "lattes",
-    "type": 1
+    "dept_id": 1
   }, {
     "post": "Cordenador",
     "name": "Everaldo Silva",
     "phone": "(83) 3315-6428",
     "email": "everaldo.silva@insa.gov.br",
     "lattes": "lattes",
-    "type": 2.1
+    "dept_id": 2.1
   }, {
     "post": "Secretária",
     "name": "Magareth Guimarães de Lima",
     "phone": "(83) 3315-6445",
     "email": "margareth.lima@insa.gov.br",
     "lattes": "lattes",
-    "type": 2.1
+    "dept_id": 2.1
   }, {
     "post": "Coordenador substituto",
     "name": "Giuseppe Roncali de Meneses Paiva",
     "phone": "(83) 3315-6402",
     "email": "giuseppe.paiva@insa.gov.br",
     "lattes": "lattes",
-    "type": 2.1
+    "dept_id": 2.1
   }, {
     "post": "Coordenador de Pesquisa",
     "name": "Ricardo da Cunha Correia Lima",
     "phone": "(83) 3315-6427",
     "email": "ricardo.lima@insa.gov.br",
     "lattes": "lattes",
-    "type": 3
+    "dept_id": 3
 
   }]
 }
