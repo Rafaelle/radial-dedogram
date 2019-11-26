@@ -116,7 +116,6 @@
         .on("click", function(d) {
           collaborators_department(d.data);
         });
-      //.on("click", collaborators(d));
 
 
       nodeGroups.append("text")
@@ -177,7 +176,7 @@
       collaborators.collaborators.filter(function(d) {
         if (d.type === department.type) {
           update_person(dpt, d);
-
+            console.log(d);
         }
 
       });
