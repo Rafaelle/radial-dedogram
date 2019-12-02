@@ -13,7 +13,6 @@
   <style>
     #org {
       margin-top: 20px;
-      /*padding: 20px; */
       align: center;
     }
 
@@ -28,6 +27,18 @@
 
     .text-nodeGroups {
       background-color: black;
+    }
+
+    .th-dept {
+      width: 10%;
+    }
+
+    .td-dept {
+      width: 90%;
+    }
+
+    .tfoot-dept {
+      width: 100% !important;
     }
   </style>
 
@@ -44,7 +55,7 @@
   <script>
     // set the dimensions and margins of the graph
     var width = 900;
-    var height = 1000;
+    var height = 900;
     var radius = width / 2; // radius of the dendrogram
     var margin = 250;
 
@@ -149,29 +160,11 @@
     });
 
     function update_person(dpt, person) {
-      if (person.lattes == null) {
-        dpt.append("div")
-          .attr("class", "person_detail")
-          .html(
-            "<table class='table jumbotron'>" +
-            "<tr><th>Cargo: </th><td>" + person.post + "</td>" +
-            "<tr><th>Nome:<td>" + person.name +
-            "<tr><th>Telefone<td>" + person.phone +
-            "<tr><th>E-mail<td>" + person.email +
-            "</table>")
-      } else {
-        dpt.append("div")
-          .attr("class", "person_detail")
-          .html(
-
-            "<table class='table jumbotron'>" +
-            "<tr><th>Cargo: </th><td>" + person.post + "</td>" +
-            "<tr><th>Nome: </th><td>" + person.name + "</td>" +
-            "<tr><th>Telefone: </th><td>" + person.phone + "</td>" +
-            "<tr><th>E-mail: </th><td>" + person.email + "</td>" +
-            "<tr><th>lattes: </th><td>" + person.lattes + "</td>" +
-            "</table>")
-      }
+      dpt.append("div")
+        .attr("class", "person_detail")
+        .html(function() {
+          return make_person_details(person);
+        });
     }
 
     function collaborators_department(department) {
@@ -189,6 +182,34 @@
       var teste = text_to_break.substring(22).split(/ (.*)/);
 
       return [res + teste[0], teste[1]];
+    }
+
+
+    function make_person_details(person) {
+      var html = "<div><table class='table jumbotron' width='50%'><tbody>" +
+        "<tr><th class='th-dept'>Cargo: </th><td class='td-dept'>" + person.post + "</td>";
+
+      if (person.occupation_area != "") {
+        html += "<tr><th class='th-dept'>Área: </th><td class='td-dept'>" + person.occupation_area + "</td>";
+      }
+
+      html += "<tr><th class='th-dept'>Nome: </th><td class='td-dept'>" + person.name + "</td>" +
+        "<tr><th class='th-dept'>Telefone: </th><td class='td-dept'>" + person.phone + "</td>" +
+        "<tr><th class='th-dept'>E-mail: </th><td class='td-dept'>" + person.email + "</td>";
+
+      if (person.lattes != "") {
+        html += "<tfoot><tr><td  colspan='4'>  <a href=" + person.lattes + " target='_blank'>Currículo lattes " +
+          "<img alt='Qries' src='icons/lattes_logo.png'> </a></td></tr></tfoot>";
+
+      }
+      html += "</tbody></table></div>";
+
+      return html;
+    }
+
+
+    function lattes(url) {
+      console.log(url);
     }
   </script>
 
