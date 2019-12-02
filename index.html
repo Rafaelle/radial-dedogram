@@ -36,7 +36,6 @@
     .td-dept {
       width: 90%;
     }
-
   </style>
 
 </head>
@@ -175,12 +174,11 @@
       return [res + teste[0], teste[1]];
     }
 
-
     function make_person_details(person) {
       var html = "<div><table class='table jumbotron' width='50%'><tbody>" +
         "<tr><th class='th-dept'>Cargo: </th><td class='td-dept'>" + person.post + "</td>";
 
-      if (person.occupation_area != "") {
+      if (person.occupation_area != "" && person.occupation_area != undefined) {
         html += "<tr><th class='th-dept'>Área: </th><td class='td-dept'>" + person.occupation_area + "</td>";
       }
 
@@ -188,7 +186,7 @@
         "<tr><th class='th-dept'>Telefone: </th><td class='td-dept'>" + person.phone + "</td>" +
         "<tr><th class='th-dept'>E-mail: </th><td class='td-dept'>" + person.email + "</td>";
 
-      if (person.lattes != "") {
+      if (person.lattes != "" && person.lattes != undefined) {
         html += "<tfoot><tr><td  colspan='4'>  <a href=" + person.lattes + " target='_blank'>Currículo lattes " +
           "<img src='/icons/lattes_logo.png'> </a></td></tr></tfoot>";
 
@@ -197,8 +195,6 @@
 
       return html;
     }
-
-
   </script>
 
 </body>
