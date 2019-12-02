@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <script src="https://d3js.org/d3.v4.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
   <style>
     #org {
       margin-top: 20px;
@@ -19,6 +22,16 @@
     #svg {
       display: block;
       margin: auto;
+    }
+
+    #icon_table_colab {
+      font-size: 30px;
+      position: absolute;
+      z-index: -1;
+      color: black;
+      text-decoration: none;
+      right: 100px;
+      top: 100px;
     }
 
     .cicle-org {
@@ -36,21 +49,50 @@
     .td-dept {
       width: 90%;
     }
+
+    .bounce {
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(-30px);
+      }
+      60% {
+        transform: translateY(-15px);
+      }
+    }
+
   </style>
 
 </head>
 
 <body>
 
-  <div id="org" class="container">
+  <div id="org" class="container" height=5000>
     <div id="org_details"> </div>
+    <!--  <i id="icon_table_colab" class="glyphicon glyphicon-chevron-down"></i> -->
+    <div class="arrow bounce" id="icon_table_colab">
+      <a class="glyphicon glyphicon-chevron-down icon_table_colab"></a>
+    </div>
     <div id="departament_detail"> </div>
   </div>
 
   <script>
     // set the dimensions and margins of the graph
     var width = 900;
-    var height = 900;
+    var height = 850;
     var radius = width / 2; // radius of the dendrogram
     var margin = 250;
 
@@ -113,6 +155,7 @@
         .attr("r", 4)
         .attr("opacity", 1)
         .on("click", function(d) {
+          svg.select("#icon_table_colab").style("visibility", "hidden");
           collaborators_department(d.data);
         });
 
@@ -150,6 +193,24 @@
         })
     });
 
+
+    function collaborators_department(department) {
+      var dpt = d3.select("#departament_detail");
+      dpt.selectAll("*").remove();
+    //  svg.select("#icon_table_colab").style("visibility", "hidden");
+
+      colab.collaborators.filter(function(d) {
+        if (d.dept_id === department.id) {
+          svg.select("#icon_table_colab").style("visibility", "visible");
+
+          update_person(dpt, d);
+
+        }
+      });
+
+
+    }
+
     function update_person(dpt, person) {
       dpt.append("div")
         .attr("class", "person_detail")
@@ -158,15 +219,6 @@
         });
     }
 
-    function collaborators_department(department) {
-      var dpt = d3.select("#departament_detail");
-      dpt.selectAll("*").remove();
-      colab.collaborators.filter(function(d) {
-        if (d.dept_id === department.id) {
-          update_person(dpt, d);
-        }
-      });
-    }
 
     function breakLine(text_to_break) {
       var res = text_to_break.substring(0, 22); // "72"
@@ -188,7 +240,7 @@
 
       if (person.lattes != "" && person.lattes != undefined) {
         html += "<tfoot><tr><td  colspan='4'>  <a href=" + person.lattes + " target='_blank'>" +
-          "<img src='icons/lattes_logo.png'> <em>&nbsp;Curriculo Lattes</em></a></td></tr></tfoot>";
+          "<img src='/icons/lattes_logo.png'/> <em>&nbsp;Curriculo Lattes</em></a></td></tr></tfoot>";
       }
       html += "</tbody></table></div>";
 
