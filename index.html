@@ -11,61 +11,55 @@
 
   <script src="https://d3js.org/d3.v4.js"></script>
   <style>
-    #my_dataviz {
-      margin: 20px;
+    #org {
+      margin-top: 20px;
       padding: 20px;
+      align: center;
     }
 
-  /*  #departament_detail {
-      position: fixed;
-      opacity: 0.9;
-      padding: 10px;
+    #svg {
+      display: block;
+      margin: auto;
     }
-*/
-    .nodeGroups circle {
-      fill: #fff;
-      stroke: steelblue;
-      stroke-width: 1.5px;
+
+    .cicle-org {
+      fill: #69b3a2;
+    }
+
+    .text-nodeGroups {
+      background-color: black;
     }
   </style>
 
 </head>
 
 <body>
-  <!-- Create a div where the graph will take place -->
 
-  <div class="container" align=center style="margin-top:20px;">
-    <div class="row">
-      <div id="departament_detail" class="col" >
-
-      </div>
-      <div id="org_details" class="col-8" align=right>
-
-      </div>
-
+  <div id="org" class="container">
+    <div id="org_details"> </div>
+    <div id="departament_detail">
     </div>
   </div>
 
-
-
   <script>
     // set the dimensions and margins of the graph
-    var width = 1500;
-    var height = 1500;
-    var radius = width / 3; // radius of the dendrogram
+    var width = 1000;
+    var height = 1000;
+    var radius = width / 2; // radius of the dendrogram
     var margin = 250;
 
     // append the svg object to the body of the page
     var svg = d3.select("#org_details")
       .append("svg")
+      .attr("id", "svg")
       .attr("width", width)
       .attr("height", height)
       .append("g")
       .attr("transform", "translate(" + radius + "," + radius + ")");
 
-    var col = [];
+    var colab = [];
     d3.json("colaboradores.json", function(d) {
-      col = d.tree;
+      colab = d.tree;
     });
     // read json data
     d3.json("data.json", function(d) {
@@ -111,26 +105,35 @@
 
 
       nodeGroups.append("circle")
+        .attr("class", "cicle-org")
         .attr("r", 4)
         .attr("opacity", 1)
-        .style("fill", "#69b3a2")
         .on("click", function(d) {
           collaborators_department(d.data);
         });
 
-
-      nodeGroups.append("text")
-        .attr("dy", ".31em")
-        .attr("opacity", 1)
+      nodeGroups.append('svg:text')
+        .attr("class", "text-nodeGroups jumbotron")
+        .attr('x', 0)
+        .attr('y', 0)
         .attr("text-anchor", function(d) {
           return d.x < 180 ? "start" : "end";
         })
         .attr("transform", function(d) {
           return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)";
         })
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 5)
         .text(function(d) {
-          return d.data.department;
-        });
+          return breakLine(d.data.department)[0];
+        })
+        .append('svg:tspan')
+        .attr('x', 0)
+        .attr('dy', 20)
+        .text(function(d) {
+          return breakLine(d.data.department)[1];
+        })
 
 
       nodeGroups.selectAll("circle")
@@ -151,7 +154,7 @@
           .attr("class", "person_detail")
           .html(
             "<table class='table jumbotron'>" +
-            "<tr><th>Cargo: </th><td>" + person.post + "</td>"+
+            "<tr><th>Cargo: </th><td>" + person.post + "</td>" +
             "<tr><th>Nome:<td>" + person.name +
             "<tr><th>Telefone<td>" + person.phone +
             "<tr><th>E-mail<td>" + person.email +
@@ -162,11 +165,11 @@
           .html(
 
             "<table class='table jumbotron'>" +
-            "<tr><th>Cargo: </th><td>" + person.post + "</td>"+
-            "<tr><th>Nome: </th><td>" + person.name + "</td>"+
-            "<tr><th>Telefone: </th><td>" + person.phone + "</td>"+
-            "<tr><th>E-mail: </th><td>" + person.email + "</td>"+
-            "<tr><th>lattes: </th><td>" + person.lattes + "</td>"+
+            "<tr><th>Cargo: </th><td>" + person.post + "</td>" +
+            "<tr><th>Nome: </th><td>" + person.name + "</td>" +
+            "<tr><th>Telefone: </th><td>" + person.phone + "</td>" +
+            "<tr><th>E-mail: </th><td>" + person.email + "</td>" +
+            "<tr><th>lattes: </th><td>" + person.lattes + "</td>" +
             "</table>")
       }
     }
@@ -174,11 +177,18 @@
     function collaborators_department(department) {
       var dpt = d3.select("#departament_detail");
       dpt.selectAll("*").remove();
-      col.collaborators.filter(function(d) {
+      colab.collaborators.filter(function(d) {
         if (d.dept_id === department.id) {
           update_person(dpt, d);
         }
       });
+    }
+
+    function breakLine(text_to_break) {
+      var res = text_to_break.substring(0, 22); // "72"
+      var teste = text_to_break.substring(22).split(/ (.*)/);
+
+      return [res + teste[0], teste[1]];
     }
   </script>
 
