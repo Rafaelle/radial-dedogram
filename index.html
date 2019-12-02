@@ -40,14 +40,17 @@
 
     .text-nodeGroups {
       background-color: black;
+      font-size: 18px;
     }
 
     .th-dept {
       width: 10%;
+      font-size: 20px;
     }
 
     .td-dept {
       width: 90%;
+      font-size: 20px;
     }
 
     .bounce {
@@ -92,8 +95,8 @@
   <script>
     // set the dimensions and margins of the graph
     var width = 900;
-    var height = 850;
-    var radius = width / 2; // radius of the dendrogram
+    var height = 890;
+    var radius = width /2; // radius of the dendrogram
     var margin = 250;
 
     // append the svg object to the body of the page
@@ -152,10 +155,9 @@
 
       nodeGroups.append("circle")
         .attr("class", "cicle-org")
-        .attr("r", 4)
+        .attr("r", 7)
         .attr("opacity", 1)
         .on("click", function(d) {
-          svg.select("#icon_table_colab").style("visibility", "hidden");
           collaborators_department(d.data);
         });
 
@@ -184,12 +186,12 @@
 
       nodeGroups.selectAll("circle")
         .on("mouseover", function(d, i) {
-          d3.select(this).attr("r", 7)
+          d3.select(this).attr("r", 12)
         });
 
       nodeGroups.selectAll("circle")
         .on("mouseout", function(d, i) {
-          d3.select(this).attr("r", 4);
+          d3.select(this).attr("r", 8);
         })
     });
 
@@ -201,7 +203,7 @@
 
       colab.collaborators.filter(function(d) {
         if (d.dept_id === department.id) {
-          svg.select("#icon_table_colab").style("visibility", "visible");
+        //  svg.select("#icon_table_colab").style("visibility", "visible");
 
           update_person(dpt, d);
 
@@ -240,7 +242,7 @@
 
       if (person.lattes != "" && person.lattes != undefined) {
         html += "<tfoot><tr><td  colspan='4'>  <a href=" + person.lattes + " target='_blank'>" +
-          "<img src='icons/lattes_logo.png'/> <em>&nbsp;Curriculo Lattes</em></a></td></tr></tfoot>";
+          "<img src='/icons/lattes_logo.png'/> <em>&nbsp;Curriculo Lattes</em></a></td></tr></tfoot>";
       }
       html += "</tbody></table></div>";
 
