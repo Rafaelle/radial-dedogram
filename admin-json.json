@@ -1,0 +1,265 @@
+{
+"post": "Coordenador(a)",
+"name": "Everaldo Silva",
+"occupation_area": "",
+"phone": "(83) 3315-6428",
+"email": "everaldo.silva@insa.gov.br",
+"lattes": "",
+"dept_id": 2.1
+}, {
+"post": "Secretária",
+"name": "Magareth Guimarães de Lima",
+"occupation_area": "",
+"phone": "(83) 3315-6445",
+"email": "margareth.lima@insa.gov.br",
+"lattes": "",
+"dept_id": 2.1
+}, {
+"post":"Coordenador substituto",
+"name": "Giuseppe Roncali de Meneses Paiva",
+"occupation_area": "",
+"phone": "(83) 3315-6402",
+"email": "giuseppe.paiva@insa.gov.br",
+"lattes": "",
+"dept_id": 2.1
+}, {
+"post":"Titular",
+"name": "Claudia Mara Baldim Ribeiro",
+"occupation_area": "",
+"phone": "(83) 3315-6414",
+"email": "claudia.ribeiro@insa.gov.br",
+"lattes": "",
+"dept_id": 2.2
+}, {
+"post": "Substituta",
+"name": "Sara Ranulce de Medeiros",
+"occupation_area": "",
+"phone": "(83) 3315-6426",
+"email": "sara.medeiros@insa.gov.br",
+"lattes": "",
+"dept_id": 2.2
+}, {
+"post": "",
+"name": "Rodeildo Clemente de Azevedo Lima",
+"occupation_area": "",
+"phone": "(83) 3315-6409",
+"email": "rodeildo.clemente@insa.gov.br",
+"lattes": "http://lattes.cnpq.br/9523441418011278",
+"dept_id": 2.3
+}, {
+"post": "",
+"name": "Catarina de Oliveira Buriti",
+"occupation_area": "",
+"phone": "(83) 3315-6439",
+"email": "catarina.buriti@insa.gov.br",
+"lattes": "http://lattes.cnpq.br/2540253224587315",
+"dept_id": 2.3
+}, {
+"post": "Estagiária",
+"name": "Elaine Inocêncio Campelo",
+"occupation_area": "",
+"phone": "(83) 3315-6439",
+"email": "elaine.campelo@insa.gov.br",
+"lattes": "",
+"dept_id": 2.3
+}, {
+"post": "Respondente",
+"name":"Catarina de Oliveira Buriti",
+"occupation_area": "",
+"phone": "(83) 3315-6439",
+"email": "catarina.buriti@insa.gov.br",
+"lattes": "",
+"dept_id": 2.4
+}, {
+"post":"Respondente",
+"name": "Rodeildo Clemente de Azevedo Lima",
+"occupation_area": "",
+"phone": "(83) 3315-6409",
+"email": "rodeildo.clemente@insa.gov.br",
+"lattes": "",
+"dept_id": 2.4
+}, {
+"post": "Respondente",
+"name":"Izidoro Pereira da Silva Junior",
+"occupation_area": "",
+"phone": "(83) 3315-6407",
+"email": "izidoro.junior@insa.gov.br",
+"lattes": "",
+"dept_id": 2.5
+}, {
+"post": "Respondente",
+"name":"Rodeildo Clemente de Azevedo Lima",
+"occupation_area": "",
+"phone": "(83) 3315-6409",
+"email": "rodeildo.clemente@insa.gov.br",
+"lattes": "",
+"dept_id": 2.5
+}, {
+"post": "",
+"name":"Gregoriev Aldano de França Fernandes",
+"occupation_area": "",
+"phone": "(83) 3315-6448",
+"email": "gregoriev.fernandes@insa.gov.br",
+"lattes": "",
+"dept_id": 2.6
+}, {
+"post":"",
+"name": "Felipe Ataíde de Albuquerque",
+"occupation_area": "",
+"phone": "(83) 3315-6480",
+"email": "felipe.albuquerque@insa.gov.br",
+"lattes": "",
+"dept_id": 2.6
+}, {
+"post":"",
+"name":"Pedro Vitor Cerqueira Pacheco",
+"occupation_area": "",
+"phone": "(83) 3315-6417",
+"email": "pedro.pacheco@insa.gov.br",
+"lattes": "",
+"dept_id": 2.6
+}, {
+  "post":"",
+"name": "Kiwsley Freire Costa",
+"occupation_area": "",
+"phone": "(83) 3315-6408",
+"email": "kiwsley.costa@insa.gov.br",
+"lattes": "",
+"dept_id": 2.6
+}, {
+"post": "Estagiário",
+"name":"Ramon Souza Silva",
+"occupation_area": "",
+"phone": "(83) 3315-6408",
+"email": "ramon.silva@insa.gov.br",
+"lattes": "",
+"dept_id": 2.6
+}, {
+  "post": "Estagiário",
+"name": "Thiago Murillo da Fonseca",
+"occupation_area": "",
+"phone": "(83) 3315-6408",
+"email": "thiago.fonseca@insa.gov.br",
+"lattes": "",
+"dept_id": 2.6
+}, {
+  "post": "Estagiário",
+"name": "Adrian bruno Soares Borges",
+"occupation_area": "",
+"phone": "(83) 3315-6408",
+"email": "adrian.borges@insa.gov.br",
+"lattes": "",
+"dept_id": 2.6
+}, {
+"post":"",
+"name": "Sara Ranulce de Medeiros",
+"occupation_area": "",
+"phone": "(83) 3315-6426",
+"email": "sara.medeiros@insa.gov.br",
+"lattes": "",
+"dept_id": 2.7
+}, {
+  "post":"",
+"name": "Maria Amazile Viera Barbosa",
+"occupation_area": "",
+"phone": "(83) 3315-6429",
+"email": "amazile.viera@insa.gov.br",
+"lattes": "",
+"dept_id": 2.7
+}, {
+"post": "Apoio administrativo",
+"name": "Layana Vanessa do Nascimento",
+"occupation_area": "",
+"phone": "(83) 3315-6429",
+"email": "layana.nascimento@insa.gov.br",
+"lattes": "",
+"dept_id": 2.7
+}, {
+  "post":"",
+"name": "Giuseppe Roncali de Meneses Paiva",
+"occupation_area": "",
+"phone": "(83) 3315-6402",
+"email": "giuseppe.paiva@insa.gov.br",
+"lattes": "",
+"dept_id": 2.8
+}, {
+  "post":"",
+"name": "Izidoro Pereira da Silva Junior",
+"occupation_area": "",
+"phone": "(83) 3315-6407",
+"email": "izidoro.junior@insa.gov.br",
+"lattes": "",
+"dept_id": 2.8
+}, {
+  "post":"",
+"name": "Rodrigo Soares Barreto",
+"occupation_area": "",
+"phone": "(83) 3315-6403",
+"email": "rodrigo.barreto@insa.gov.br",
+"lattes": "",
+"dept_id": 2.9
+}, {
+  "post":"",
+"name": "Izidoro Pereira da Silva Junior",
+"occupation_area": "",
+"phone": "(83) 3315-6407",
+"email": "izidoro.junior@insa.gov.br",
+"lattes": "",
+"dept_id": 2.9
+}, {
+  "post":"",
+"name": "Andreia Ponciano de Moraes",
+"occupation_area": "",
+"phone": "(83) 3315-6434",
+"email": "andreia.ponciano@insa.gov.br",
+"lattes": "",
+"dept_id": 2.10
+}, {
+"post": "Cadastrador/Supervisor",
+"name": "Izidoro Pereira da Silva Junior",
+"occupation_area": "",
+"phone": "(83) 3315-6407",
+"email": "izidoro.junior@insa.gov.br",
+"lattes": "",
+"dept_id": 2.11
+}, {
+"post":"",
+"name": "Rodeildo Clemente de Azevedo",
+"occupation_area": "",
+"phone": "(83) 3315-64",
+"email": "rodeildo.clemente@insa.gov.br",
+"lattes": "",
+"dept_id": 2.12
+}, {
+  "post":"",
+"name": "Claudia Mara Baldim Ribeiro",
+"occupation_area": "",
+"phone": "(83) 3315-6414",
+"email": "claudia.ribeiro@insa.gov.br",
+"lattes": "",
+"dept_id": 2.13
+}, {
+  "post":"",
+"name": "Maria do Carmo Freire Soares",
+"occupation_area": "",
+"phone": "(83) 3315-6424",
+"email": "maria.soares@insa.gov.br",
+"lattes": "",
+"dept_id": 2.13
+}, {
+  "post":"",
+"name": "José Rafael Ayres da Motta",
+"occupation_area": "",
+"phone": "(83) 3315-6461",
+"email": "rafael.motta@insa.gov.br",
+"lattes": "",
+"dept_id": 2.14
+}, {
+  "post":"",
+"name": "João Bosco dos Santos",
+"occupation_area": "",
+"phone": "(83) 3315-6433",
+"email": "joao.santos@insa.gov.br",
+"lattes": "",
+"dept_id": 2.14
+}

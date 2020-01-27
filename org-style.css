@@ -1,0 +1,81 @@
+#org {
+  margin: 20px;
+  align: center;
+  text-align: center;
+}
+
+#svg {
+  display: block;
+  margin: auto;
+}
+
+#icon_table_colab {
+  font-size: 30px;
+  position: absolute;
+  z-index: -1;
+  color: black;
+  text-decoration: none;
+  right: 100px;
+  top: 100px;
+}
+
+.cicle-org {
+  fill: #69b3a2;
+}
+
+.text-nodeGroups {
+  background-color: black;
+  font-size: 18px;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* org-style */
+/* FontAwesome for working BootSnippet :> */
+.section-title {
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.card {
+  min-height: 300px;
+  width: 300px;
+  border: 2px solid gray;
+  border-radius: 15%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.card .card-body img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.person_detail {
+  text-align: center;
+}

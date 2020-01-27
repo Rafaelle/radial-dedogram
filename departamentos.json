@@ -2,185 +2,185 @@
   "tree": {
     "department": "DIRETORIA",
     "abbreviation": "",
-    "id": 1,
+    "id": "1",
 
     "children": [{
       "department": "ADMINISTRAÇÃO",
       "abbreviation": "",
-      "id": 2,
+      "id": "2",
 
       "children": [{
         "department": "Coordenador de Administração",
         "sigla": "COADM",
-        "id": 2.1,
+        "id": "2.1",
 
         "children": []
       }, {
         "department": "Serviço Administrativo",
         "abbreviation": "SEADM",
-        "id": 2.2,
+        "id": "2.2",
 
         "children": []
       }, {
         "department": "Assessoria de Comunicação",
         "abbreviation": "",
-        "id": 2.3,
+        "id": "2.3",
 
         "children": []
       }, {
         "department": "Serviço de Informação ao Cidadão",
         "abbreviation": "SIC",
-        "id": 2.4,
+        "id": "2.4",
 
         "children": []
       }, {
         "department": "Ouvidoria",
         "abbreviation": "",
-        "id": 2.5,
+        "id": "2.5",
 
         "children": []
       }, {
         "department": "Tecnologia da Informação",
         "abbreviation": "TI",
-        "id": 2.6,
+        "id": "2.6",
 
         "children": []
       }, {
         "department": "Compras e Contratações",
         "abbreviation": "",
-        "id": 2.7,
+        "id": "2.7",
 
         "children": []
       }, {
         "department": "Contabilidade e Finanças",
         "abbreviation": "",
-        "id": 2.8,
+        "id": "2.8",
 
         "children": []
       }, {
         "department": "Patrimônio e Almoxarifado",
         "abbreviation": "",
-        "id": 2.9,
+        "id": "2.9",
 
         "children": []
       }, {
         "department": "Lei de Acesso à Informação",
         "abbreviation": "LAI",
-        "id": 2.10,
+        "id": "2.10",
 
         "children": []
       }, {
         "department": "Sistema E_AUD",
         "abbreviation": "",
-        "id": 2.11,
+        "id": "2.11",
 
         "children": []
       }, {
         "department": "Sistema INCOM",
         "abbreviation": "",
-        "id": 2.12,
+        "id": "2.12",
 
         "children": []
       }, {
-        "department": "Gestão de Pesoas",
+        "department": "Gestão de Pessoas",
         "abbreviation": "",
-        "id": 2.13,
+        "id": "2.13",
 
         "children": []
       }, {
         "department": "Infraestrutura e Transporte",
         "abbreviation": "",
-        "id": 2.14,
+        "id": "2.14",
 
         "children": []
       }]
     }, {
       "department": "PESQUISA",
       "abbreviation": "",
-      "id": 3,
+      "id": "3",
 
       "children": [{
         "department": "Coordenação de Pesquisa",
         "abbreviation": "COPEQ",
-        "id": 3.1,
+        "id": "3.1",
 
         "children": []
       }, {
         "department": "Núcleo de Ciências do Solo e Mineralogia",
         "abbreviation": "",
-        "id": 3.2,
+        "id": "3.2",
 
         "children": []
       }, {
         "department": "Núcleo de Biodiversidade",
         "abbreviation": "",
-        "id": 3.3,
+        "id": "3.3",
 
         "children": []
       }, {
         "department": "Núcleo de Gestão de Informação e do Conhecimento",
         "abbreviation": "",
-        "id": 3.4,
+        "id": "3.4",
 
         "children": []
       }, {
         "department": "Núcleo de Geotecnologias",
         "abbreviation": "",
-        "id": 3.5,
+        "id": "3.5",
 
         "children": []
       }, {
         "department": "Complexo Laboratoriais do Insa",
         "abbreviation": "",
-        "id": 3.6,
+        "id": "3.6",
 
         "children": []
       }, {
         "department": "Núcleo de Desertificação e Agroecologia em Terras Secas",
         "abbreviation": "",
-        "id": 3.7,
+        "id": "3.7",
 
         "children": []
       }, {
         "department": "Núcleo de Produção Animal",
         "abbreviation": "",
-        "id": 3.8,
+        "id": "3.8",
 
         "children": []
       }, {
         "department": "Núcleo de Produção Vegetal",
         "abbreviation": "",
-        "id": 3.9,
+        "id": "3.9",
 
         "children": []
       }, {
         "department": "Núcleo de Recursos Hídricos",
         "abbreviation": "",
-        "id": 3.10,
+        "id": "3.10",
 
         "children": []
       }, {
         "department": "Núcleo de Desenvolvimento de Tecnologias Sociais",
         "abbreviation": "NDST",
-        "id": 3.11,
+        "id": "3.11",
 
         "children": []
       }, {
         "department": "Assessoria Técnica para Pesquisa",
         "abbreviation": "",
-        "id": 3.12,
+        "id": "3.12",
 
         "children": []
       }, {
         "department": "Popularização da Ciência",
         "abbreviation": "",
-        "id": 3.13,
+        "id": "3.13",
 
         "children": []
       }, {
         "department": "Estação Experimental",
         "abbreviation": "",
-        "id": 3.15,
+        "id": "3.14",
 
         "children": []
       }]

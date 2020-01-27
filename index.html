@@ -7,249 +7,26 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Load d3.js -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
   <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="./org-script.js"></script>
+  <link rel="stylesheet" href="./org-style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-
-  <style>
-    #org {
-      margin-top: 20px;
-      align: center;
-    }
-
-    #svg {
-      display: block;
-      margin: auto;
-    }
-
-    #icon_table_colab {
-      font-size: 30px;
-      position: absolute;
-      z-index: -1;
-      color: black;
-      text-decoration: none;
-      right: 100px;
-      top: 100px;
-    }
-
-    .cicle-org {
-      fill: #69b3a2;
-    }
-
-    .text-nodeGroups {
-      background-color: black;
-      font-size: 18px;
-    }
-
-    .th-dept {
-      width: 10%;
-      font-size: 20px;
-    }
-
-    .td-dept {
-      width: 90%;
-      font-size: 20px;
-    }
-
-    .bounce {
-      -moz-animation: bounce 2s infinite;
-      -webkit-animation: bounce 2s infinite;
-      animation: bounce 2s infinite;
-    }
-
-    @keyframes bounce {
-
-      0%,
-      20%,
-      50%,
-      80%,
-      100% {
-        transform: translateY(0);
-      }
-
-      40% {
-        transform: translateY(-30px);
-      }
-      60% {
-        transform: translateY(-15px);
-      }
-    }
-
-  </style>
 
 </head>
 
 <body>
 
-  <div id="org" class="container" height=5000>
+  <div id="org" class="container">
     <div id="org_details"> </div>
     <!--  <i id="icon_table_colab" class="glyphicon glyphicon-chevron-down"></i> -->
     <div class="arrow bounce" id="icon_table_colab">
       <a class="glyphicon glyphicon-chevron-down icon_table_colab"></a>
     </div>
-    <div id="departament_detail"> </div>
+    <div id="departament_detail">
+    </div>
+
   </div>
-
-  <script>
-    // set the dimensions and margins of the graph
-    var width = 900;
-    var height = 890;
-    var radius = width /2; // radius of the dendrogram
-    var margin = 250;
-
-    // append the svg object to the body of the page
-    var svg = d3.select("#org_details")
-      .append("svg")
-      .attr("id", "svg")
-      .attr("width", width)
-      .attr("height", height)
-      .append("g")
-      .attr("transform", "translate(" + radius + "," + radius + ")");
-
-    var colab = [];
-    d3.json("colaboradores.json", function(d) {
-      colab = d.tree;
-    });
-    // read json data
-    d3.json("data.json", function(d) {
-      var data = d.tree;
-
-      // Create the cluster layout:
-      var cluster = d3.cluster()
-        .size([360, radius - margin]); // 360 means whole circle. radius - 60 means 60 px of margin around dendrogram
-
-      // Give the data to this cluster layout:
-      var root = d3.hierarchy(data, function(d) {
-        return d.children;
-      });
-      cluster(root);
-
-      // Features of the links between nodes:
-      var linksGenerator = d3.linkRadial()
-        .angle(function(d) {
-          return d.x / 180 * Math.PI;
-        })
-        .radius(function(d) {
-          return d.y;
-        });
-
-      // Add the links between nodes:
-      svg.selectAll('path')
-        .data(root.links())
-        .enter()
-        .append('path')
-        .attr("d", linksGenerator)
-        .style("fill", 'none')
-        .attr("stroke", '#ccc');
-
-      // Add a circle for each node.
-      var nodeGroups = svg.selectAll("g")
-        .data(root.descendants())
-        .enter()
-        .append("g")
-        .attr("transform", function(d) {
-          return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")";
-        });
-
-      nodeGroups.append("circle")
-        .attr("class", "cicle-org")
-        .attr("r", 7)
-        .attr("opacity", 1)
-        .on("click", function(d) {
-          collaborators_department(d.data);
-        });
-
-      nodeGroups.append('svg:text')
-        .attr("class", "text-nodeGroups jumbotron")
-        .attr('x', 0)
-        .attr('y', 0)
-        .attr("text-anchor", function(d) {
-          return d.x < 180 ? "start" : "end";
-        })
-        .attr("transform", function(d) {
-          return d.x < 180 ? "translate(8)" : "rotate(180)translate(-8)";
-        })
-        .append('svg:tspan')
-        .attr('x', 0)
-        .attr('dy', 5)
-        .text(function(d) {
-          return breakLine(d.data.department)[0];
-        })
-        .append('svg:tspan')
-        .attr('x', 0)
-        .attr('dy', 20)
-        .text(function(d) {
-          return breakLine(d.data.department)[1];
-        })
-
-      nodeGroups.selectAll("circle")
-        .on("mouseover", function(d, i) {
-          d3.select(this).attr("r", 12)
-        });
-
-      nodeGroups.selectAll("circle")
-        .on("mouseout", function(d, i) {
-          d3.select(this).attr("r", 8);
-        })
-    });
-
-
-    function collaborators_department(department) {
-      var dpt = d3.select("#departament_detail");
-      dpt.selectAll("*").remove();
-    //  svg.select("#icon_table_colab").style("visibility", "hidden");
-
-      colab.collaborators.filter(function(d) {
-        if (d.dept_id === department.id) {
-        //  svg.select("#icon_table_colab").style("visibility", "visible");
-
-          update_person(dpt, d);
-
-        }
-      });
-
-
-    }
-
-    function update_person(dpt, person) {
-      dpt.append("div")
-        .attr("class", "person_detail")
-        .html(function() {
-          return make_person_details(person);
-        });
-    }
-
-
-    function breakLine(text_to_break) {
-      var res = text_to_break.substring(0, 22); // "72"
-      var teste = text_to_break.substring(22).split(/ (.*)/);
-      return [res + teste[0], teste[1]];
-    }
-
-    function make_person_details(person) {
-      var html = "<div><table class='table jumbotron' width='50%'><tbody>" +
-        "<tr><th class='th-dept'>Cargo: </th><td class='td-dept'>" + person.post + "</td>";
-
-      if (person.occupation_area != "" && person.occupation_area != undefined) {
-        html += "<tr><th class='th-dept'>Área: </th><td class='td-dept'>" + person.occupation_area + "</td>";
-      }
-
-      html += "<tr><th class='th-dept'>Nome: </th><td class='td-dept'>" + person.name + "</td>" +
-        "<tr><th class='th-dept'>Telefone: </th><td class='td-dept'>" + person.phone + "</td>" +
-        "<tr><th class='th-dept'>E-mail: </th><td class='td-dept'>" + person.email + "</td>";
-
-      if (person.lattes != "" && person.lattes != undefined) {
-        html += "<tfoot><tr><td  colspan='4'>  <a href=" + person.lattes + " target='_blank'>" +
-          "<img src='icons/lattes_logo.png'/> <em>&nbsp;Curriculo Lattes</em></a></td></tr></tfoot>";
-      }
-      html += "</tbody></table></div>";
-
-      return html;
-    }
-  </script>
-
 </body>
 
 </html>

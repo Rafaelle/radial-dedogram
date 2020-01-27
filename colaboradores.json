@@ -7,7 +7,7 @@
       "phone": "(83)3316-6411",
       "email": "insa@insa.gov.br",
       "lattes": "",
-      "dept_id": 1
+      "dept_id": "1"
     }, {
       "post": "Secretária",
       "name": "Maria de Fátima da Silva Soares",
@@ -15,15 +15,15 @@
       "phone": "(83)3315-6411",
       "email": "maria.fatima@insa.gov.br",
       "lattes": "",
-      "dept_id": 1
+      "dept_id": "1"
     }, {
-      "post": "Cordenador",
+      "post": "Coordenador(a)",
       "name": "Everaldo Silva",
       "occupation_area": "",
       "phone": "(83) 3315-6428",
       "email": "everaldo.silva@insa.gov.br",
       "lattes": "",
-      "dept_id": 2.1
+      "dept_id": "2.1"
     }, {
       "post": "Secretária",
       "name": "Magareth Guimarães de Lima",
@@ -31,32 +31,391 @@
       "phone": "(83) 3315-6445",
       "email": "margareth.lima@insa.gov.br",
       "lattes": "",
-      "dept_id": 2.1
+      "dept_id": "2.1"
     }, {
       "post": "Coordenador substituto",
       "name": "Giuseppe Roncali de Meneses Paiva",
       "occupation_area": "",
       "phone": "(83) 3315-6402",
       "email": "giuseppe.paiva@insa.gov.br",
-      "lattes": "lattes",
-      "dept_id": 2.1
+      "lattes": "",
+      "dept_id": "2.1"
+    }, {
+      "post": "Titular",
+      "name": "Claudia Mara Baldim Ribeiro",
+      "occupation_area": "",
+      "phone": "(83) 3315-6414",
+      "email": "claudia.ribeiro@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.2"
+    }, {
+      "post": "Substituta",
+      "name": "Sara Ranulce de Medeiros",
+      "occupation_area": "",
+      "phone": "(83) 3315-6426",
+      "email": "sara.medeiros@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.2"
+    }, {
+      "post": "",
+      "name": "Rodeildo Clemente de Azevedo Lima",
+      "occupation_area": "",
+      "phone": "(83) 3315-6409",
+      "email": "rodeildo.clemente@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/9523441418011278",
+      "dept_id": "2.3"
+    }, {
+      "post": "",
+      "name": "Catarina de Oliveira Buriti",
+      "occupation_area": "",
+      "phone": "(83) 3315-6439",
+      "email": "catarina.buriti@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/2540253224587315",
+      "dept_id": "2.3"
+    }, {
+      "post": "Estagiária",
+      "name": "Elaine Inocêncio Campelo",
+      "occupation_area": "",
+      "phone": "(83) 3315-6439",
+      "email": "elaine.campelo@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.3"
+    }, {
+      "post": "Respondente",
+      "name": "Catarina de Oliveira Buriti",
+      "occupation_area": "",
+      "phone": "(83) 3315-6439",
+      "email": "catarina.buriti@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.4"
+    }, {
+      "post": "Respondente",
+      "name": "Rodeildo Clemente de Azevedo Lima",
+      "occupation_area": "",
+      "phone": "(83) 3315-6409",
+      "email": "rodeildo.clemente@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.4"
+    }, {
+      "post": "Respondente",
+      "name": "Izidoro Pereira da Silva Junior",
+      "occupation_area": "",
+      "phone": "(83) 3315-6407",
+      "email": "izidoro.junior@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.5"
+    }, {
+      "post": "Respondente",
+      "name": "Rodeildo Clemente de Azevedo Lima",
+      "occupation_area": "",
+      "phone": "(83) 3315-6409",
+      "email": "rodeildo.clemente@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.5"
+    }, {
+      "post": "",
+      "name": "Gregoriev Aldano de França Fernandes",
+      "occupation_area": "",
+      "phone": "(83) 3315-6448",
+      "email": "gregoriev.fernandes@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.6"
+    }, {
+      "post": "",
+      "name": "Felipe Ataíde de Albuquerque",
+      "occupation_area": "",
+      "phone": "(83) 3315-6480",
+      "email": "felipe.albuquerque@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.6"
+    }, {
+      "post": "",
+      "name": "Pedro Vitor Cerqueira Pacheco",
+      "occupation_area": "",
+      "phone": "(83) 3315-6417",
+      "email": "pedro.pacheco@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.6"
+    }, {
+      "post": "",
+      "name": "Kiwsley Freire Costa",
+      "occupation_area": "",
+      "phone": "(83) 3315-6408",
+      "email": "kiwsley.costa@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.6"
+    }, {
+      "post": "Estagiário",
+      "name": "Ramon Souza Silva",
+      "occupation_area": "",
+      "phone": "(83) 3315-6408",
+      "email": "ramon.silva@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.6"
+    }, {
+      "post": "Estagiário",
+      "name": "Thiago Murillo da Fonseca",
+      "occupation_area": "",
+      "phone": "(83) 3315-6408",
+      "email": "thiago.fonseca@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.6"
+    }, {
+      "post": "Estagiário",
+      "name": "Adrian bruno Soares Borges",
+      "occupation_area": "",
+      "phone": "(83) 3315-6408",
+      "email": "adrian.borges@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.6"
+    }, {
+      "post": "",
+      "name": "Sara Ranulce de Medeiros",
+      "occupation_area": "",
+      "phone": "(83) 3315-6426",
+      "email": "sara.medeiros@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.7"
+    }, {
+      "post": "",
+      "name": "Maria Amazile Viera Barbosa",
+      "occupation_area": "",
+      "phone": "(83) 3315-6429",
+      "email": "amazile.viera@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.7"
+    }, {
+      "post": "Apoio administrativo",
+      "name": "Layana Vanessa do Nascimento",
+      "occupation_area": "",
+      "phone": "(83) 3315-6429",
+      "email": "layana.nascimento@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.7"
+    }, {
+      "post": "",
+      "name": "Giuseppe Roncali de Meneses Paiva",
+      "occupation_area": "",
+      "phone": "(83) 3315-6402",
+      "email": "giuseppe.paiva@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.8"
+    }, {
+      "post": "",
+      "name": "Izidoro Pereira da Silva Junior",
+      "occupation_area": "",
+      "phone": "(83) 3315-6407",
+      "email": "izidoro.junior@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.8"
+    }, {
+      "post": "",
+      "name": "Rodrigo Soares Barreto",
+      "occupation_area": "",
+      "phone": "(83) 3315-6403",
+      "email": "rodrigo.barreto@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.9"
+    }, {
+      "post": "",
+      "name": "Izidoro Pereira da Silva Junior",
+      "occupation_area": "",
+      "phone": "(83) 3315-6407",
+      "email": "izidoro.junior@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.9"
+    }, {
+      "post": "",
+      "name": "Andreia Ponciano de Moraes",
+      "occupation_area": "",
+      "phone": "(83) 3315-6434",
+      "email": "andreia.ponciano@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.10"
+    }, {
+      "post": "Cadastrador/Supervisor",
+      "name": "Izidoro Pereira da Silva Junior",
+      "occupation_area": "",
+      "phone": "(83) 3315-6407",
+      "email": "izidoro.junior@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.11"
+    }, {
+      "post": "",
+      "name": "Rodeildo Clemente de Azevedo",
+      "occupation_area": "",
+      "phone": "(83) 3315-64",
+      "email": "rodeildo.clemente@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.12"
+    }, {
+      "post": "",
+      "name": "Claudia Mara Baldim Ribeiro",
+      "occupation_area": "",
+      "phone": "(83) 3315-6414",
+      "email": "claudia.ribeiro@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.13"
+    }, {
+      "post": "",
+      "name": "Maria do Carmo Freire Soares",
+      "occupation_area": "",
+      "phone": "(83) 3315-6424",
+      "email": "maria.soares@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.13"
+    }, {
+      "post": "",
+      "name": "José Rafael Ayres da Motta",
+      "occupation_area": "",
+      "phone": "(83) 3315-6461",
+      "email": "rafael.motta@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.14"
+    }, {
+      "post": "",
+      "name": "João Bosco dos Santos",
+      "occupation_area": "",
+      "phone": "(83) 3315-6433",
+      "email": "joao.santos@insa.gov.br",
+      "lattes": "",
+      "dept_id": "2.14"
     }, {
       "post": "Coordenador de Pesquisa",
       "name": "Ricardo da Cunha Correia Lima",
       "occupation_area": "",
-      "phone": "(83) 3315-6427",
+      "phone": " (83) 3315-6427",
       "email": "ricardo.lima@insa.gov.br",
-      "lattes": "lattes",
-      "dept_id": 3
-
+      "lattes": "",
+      "dept_id": "3.1"
     }, {
-      "post": "Pesquisador Responsável",
+      "post": "Secretária",
+      "name": "Temira Nascimento",
+      "occupation_area": "",
+      "phone": " (83) 3315-6423",
+      "email": "temira.nascimento@insa.gov.br",
+      "lattes": "",
+      "dept_id": "3.1"
+    }, {
+      "post": "Coordenadora Substituta",
+      "name": "Fabiane Rabelo da Costa Batista",
+      "occupation_area": "",
+      "phone": " (83) 3315-6406",
+      "email": "fabiane.costa@insa.gov.br",
+      "lattes": "",
+      "dept_id": "3.1"
+    }, {
+      "post": "Pesquisador(a) Responsável",
       "name": "Alexandre Pereira de Bakker",
       "occupation_area": "Ciências do Solo e Mineralogia",
-      "phone": "(83) 3315 - 6458",
-      "email":"alexandre.bakker @insa.gov.br",
-      "lattes": "http://buscatextual.cnpq.br/buscatextual/busca.do?metodo=apresentar",
-      "dept_id": 3.2
+      "phone": " (83) 3315-6458",
+      "email": "alexandre.bakker@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/5913290628658008",
+      "dept_id": "3.2"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": "Fabiane Rabelo da Costa Batista",
+      "occupation_area": "",
+      "phone": " (83) 3315-6406",
+      "email": "fabiane.costa@insa.gov.br",
+      "lattes": "",
+      "dept_id": "3.3"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": "Ricardo da Cunha Correia Lima",
+      "occupation_area": "Recursos Hídricos",
+      "phone": " (83) 3315-6427",
+      "email": "ricardo.lima@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/1991607303660971",
+      "dept_id": "3.4"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": "Ricardo da Cunha Correia Lima",
+      "occupation_area": "Geotecnologias e Desertificação",
+      "phone": " (83) 3315-6427",
+      "email": "ricardo.lima@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/1991607303660971",
+      "dept_id": "3.5"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": " Alexandre Pereira de Bakker",
+      "occupation_area": "",
+      "phone": " (83) 3315-6458",
+      "email": "alexandre.bakker@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/5913290628658008",
+      "dept_id": "3.6"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": "Aldrin Martin Perez Marin",
+      "occupation_area": "Meio Ambiente e Desertificação",
+      "phone": " (83) 3315-6412",
+      "email": "aldrin.perez@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/9814607951325299",
+      "dept_id": "3.7"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": "Geovergue Rodrigues de Medeiros",
+      "occupation_area": "Produção Animal",
+      "phone": " (83) 3315-6413",
+      "email": "geovergue.medeiros@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/6986332750712586",
+      "dept_id": "3.8"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": "Jucilene Silva Araújo",
+      "occupation_area": "Produção Vegetal",
+      "phone": " (83) 3315-6456",
+      "email": "jucilene.araujo@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/5545896953221851",
+      "dept_id": "3.9"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": "Salomão de Sousa Medeiros",
+      "occupation_area": "Recursos Hídricos",
+      "phone": " (83) 3315-6411",
+      "email": "salomao.medeiros@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/9621251182899061",
+      "dept_id": "3.10"
+    }, {
+      "post": "Pesquisador(a) Responsável",
+      "name": "Aldrin Martin Perez Marin",
+      "occupation_area": "Meio Ambiente e Desertificação",
+      "phone": " (83) 3315-6412",
+      "email": "aldrin.perez@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/9814607951325299",
+      "dept_id": "3.11"
+    }, {
+      "post": "",
+      "name": "Andreia Ponciano de Moraes",
+      "occupation_area": "",
+      "phone": " (83) 3315-6434",
+      "email": "andreia.ponciano@insa.gov.br",
+      "lattes": "",
+      "dept_id": "3.12"
+    }, {
+      "post": "Responsável",
+      "name": "Everaldo Silva",
+      "occupation_area": "",
+      "phone": " (83) 3315-6428",
+      "email": "everaldo.silva@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/6026330920557422",
+      "dept_id": "3.13"
+    }, {
+      "post": "",
+      "name": "Carlos Ticiano Coutinho Ramos",
+      "occupation_area": "Técnico em Agropecuária",
+      "phone": " (83) 3315-6466",
+      "email": "carlos.ramos@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/2242510981538563",
+      "dept_id": "3.14"
+    }, {
+      "post": "",
+      "name": "Paulo Luciano da Silva Santos",
+      "occupation_area": "Técnico em Agropecuária",
+      "phone": " (83) 3315-6465",
+      "email": "paulo.santos@insa.gov.br",
+      "lattes": "http://lattes.cnpq.br/8708455687355461",
+      "dept_id": "3.14"
     }]
   }
 }
