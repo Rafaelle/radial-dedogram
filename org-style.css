@@ -1,7 +1,13 @@
+body, html{
+    margin:0;
+    padding:0;
+}
 #org {
-  margin: 20px;
+  margin: 0 auto;
   align: center;
   text-align: center;
+  padding: 10px;
+
 }
 
 #svg {
@@ -35,7 +41,6 @@
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   50%,
@@ -56,24 +61,33 @@
 /* org-style */
 /* FontAwesome for working BootSnippet :> */
 .section-title {
-  color: #007b5e;
+  color: #69b3a2;
   margin-bottom: 50px;
   text-align: center;
 }
-
+.card-deck{
+  justify-content: center;
+}
 .card {
   min-height: 300px;
   width: 300px;
   border: 2px solid gray;
   border-radius: 15%;
   margin: 0 auto;
-  padding: 10px;
+  position:relative;
+  align:center;
 }
 
-.card .card-body img {
-  width: 100px;
-  height: 100px;
+.card-text{
+  text-align: left;
+}
+.card-img {
+  width: 100px!important;
+  height: 100px!important;
   border-radius: 50%;
+  align-self: center;
+  padding: 4px;
+  margin-top: 5px;
 }
 
 .person_detail {

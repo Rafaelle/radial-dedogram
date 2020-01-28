@@ -97,7 +97,7 @@ window.onload = function(){
             if (d.data.id !== "2" && d.data.id !== "3") {
               d3.select(this)
               .attr("r", 12)
-              .style("fill", 'red');
+              .style("fill", 'black');
             }
           });
 
@@ -107,7 +107,7 @@ window.onload = function(){
               if (d.data.id !== "2" && d.data.id !== "3") {
                 d3.select(this)
                 .attr("r", 8)
-                .style("fill", '#6AB0A3');
+                .style("fill", '#69b3a2');
               }
             }
           })
@@ -117,12 +117,12 @@ window.onload = function(){
 
 
 function collaborators_department(department, colab) {
-  var dpt = d3.select("#departament_detail");
-  dpt.selectAll("*").remove();
+  d3.select("#department_container").select("h3").html(department.department);
   //  svg.select("#icon_table_colab").style("visibility", "hidden");
-  dpt.append("h3")
-    .attr("class", "section-title")
-    .html(department.department);
+
+
+  var dpt  = d3.select("#departament_detail");
+  dpt.selectAll("*").remove();
 
   colab.collaborators.filter(function(d) {
     if (d.dept_id === department.id) {
@@ -136,7 +136,7 @@ function collaborators_department(department, colab) {
 
 function update_person(dpt, person) {
   dpt.append("div")
-    .attr("class", "person_detail col-xs-12 col-sm-12 col-md-6")
+    .attr("class", "person_detail")
     .html(function() {
       return make_person_details(person);
     });
@@ -151,33 +151,35 @@ function breakLine(text_to_break) {
 
 function make_person_details(person) {
 
-  var html = "<div class='card'><div class='card-body'>";
+  var html = "<div class='card bg-light'>";
 
   if (person.img != "" && person.img != undefined) {
-    html += "<p><img src=" + person.img + "alt='card image'></p>";
+    html += "<img class='card-img ' src=" + person.img + "alt='card image'>";
   } else {
-    html += "<p><img  src='icons/do-utilizador.png' alt='card image'></p>";
+    html += "<img  class= 'card-img ' src='icons/do-utilizador.png' alt='card image'>";
   }
 
-  html += "<h4 class='card-title'>" + person.name + "</h4>";
+  html += "<div class='card-body'><h5 class='card-title'>" + person.name + "</h5><hr/>";
 
   if (person.post != "" && person.post != undefined) {
-    html += "<p class='card-text'>Cargo: " + person.post + "</p>";
+    html += "<p class='card-text'><b>Cargo:</b> " + person.post + "</p>";
   }
 
   if (person.occupation_area != "" && person.occupation_area != undefined) {
-    html += "<p class='card-text'>Área: " + person.occupation_area + "</p>";
+    html += "<p class='card-text'><b>Área:</b> " + person.occupation_area + "</p>";
   }
 
-  html += "<p class='card-text'>Telefone: " + person.phone + "</p>" +
-    "<p class='card-text'>E-mail: " + person.email + "</p>";
+  html += "<p class='card-text'><b>Telefone:</b> " + person.phone + "</p>" +
+    "<p class='card-text'><b>E-mail:</b> " + person.email + "</p>";
+    html += "</div>";
+
 
   if (person.lattes != "" && person.lattes != undefined) {
-    html += "<p class='card-text'> <a href=" + person.lattes + " target='_blank'>" +
-      "<img src='icons/lattes_logo.png'/> <em>&nbsp;Curriculo Lattes</em></a></p>";
+    html += "<div class='card-footer'> <a class='card-link' href=" + person.lattes + " target='_blank'>" +
+      "<img class='img-lattes' src='icons/lattes_logo.png'/> <em>&nbsp;Curriculo Lattes</em></a></p>";
   }
 
-  html += "</div></div>";
+  html += "</div>";
 
   return html;
 }
