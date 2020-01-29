@@ -74,7 +74,7 @@ window.onload = function(){
           collaborators_department(d.data, colab);
         }
       });
-
+      
     nodeGroups.append('svg:text')
       .attr("class", "text-nodeGroups jumbotron")
       .attr('x', 0)
