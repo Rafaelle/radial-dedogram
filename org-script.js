@@ -5,6 +5,7 @@ var radius = width / 2; // radius of the dendrogram
 var margin = 250;
 
 window.onload = function(){
+
   // append the svg object to the body of the page
   var svg = d3.select("#org_details")
     .append("svg")
@@ -13,6 +14,10 @@ window.onload = function(){
     .attr("height", height)
     .append("g")
     .attr("transform", "translate(" + radius + "," + radius + ")");
+
+    //svg.select("#arrow-departament-detail").style("display","none");
+
+
 
   var colab = [];
   d3.json("colaboradores.json", function(d) {
@@ -65,6 +70,7 @@ window.onload = function(){
       .attr("opacity", 1)
       .on("click", function(d) {
         if (d.data.id !== "2" && d.data.id !== "3") {
+          //svg.select("#arrow-departament-detail").style("visibility","show");
           collaborators_department(d.data, colab);
         }
       });
