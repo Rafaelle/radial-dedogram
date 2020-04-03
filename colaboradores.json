@@ -1,8 +1,8 @@
 {
   "tree": {
     "collaborators": [{
-      "post": "Diretor",
-      "name": "Salomão de Sousa Medeiros",
+      "post": "Diretora",
+      "name": "Monica Tejo",
       "occupation_area": "",
       "phone": "(83)3316-6411",
       "email": "insa@insa.gov.br",
@@ -10,10 +10,10 @@
       "dept_id": "1"
     }, {
       "post": "Secretária",
-      "name": "Maria de Fátima da Silva Soares",
+      "name": "",
       "occupation_area": "",
-      "phone": "(83)3315-6411",
-      "email": "maria.fatima@insa.gov.br",
+      "phone": "",
+      "email": "",
       "lattes": "",
       "dept_id": "1"
     }, {
